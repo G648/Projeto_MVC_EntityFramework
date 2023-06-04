@@ -1,0 +1,33 @@
+@model Equipe
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+@* <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body> *@
+    <h1>Edição de equipes</h1>
+
+    <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+
+        <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
+        
+        <label for="">Nome</label>
+        <input type="text" name="Nome" value="@ViewBag.equipe.Nome">
+
+        <label for="">Imagem</label>
+        <input type="file" name="Imagem" value="@ViewBag.equipe.Imagem">
+
+        <button type="submit">Atualizar</button>
+
+    </form>
+
+@* </body>
+</html> *@
