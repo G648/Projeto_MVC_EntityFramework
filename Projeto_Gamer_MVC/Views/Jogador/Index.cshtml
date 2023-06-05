@@ -18,14 +18,20 @@
         <input type="text" placeholder="Digite seu nome..." name="Nome" required>
 
         <label for="" >Email</label>
-        <input type="text" placeholder="Digite seu email..." name="Email" required>
+        <input type="email" placeholder="Digite seu email..." name="Email" required>
 
         <label for="" >Senha</label>
-        <input type="text"  placeholder="Digite sua senha..." name="Senha" required>
-        @*fazer a validação para não aparecer a senha no front-end*@
+        <input type="password"  placeholder="Digite sua senha..." name="Senha" required>
 
-        <label for="" >IdEquipe</label>
-        <input type="text"  placeholder="Digite sua IdEquipe..." name="IdEquipe" required>
+        <label for="" >Equipe</label>
+
+        <select name="IdEquipe" id="">
+            <option value="IdEquipe">Selecione o Id da Equipe</option>
+            @foreach (Equipe equipe in ViewBag.Equipe)
+            {
+                <option value="@equipe.IdEquipe">@equipe.Nome</option>
+            }
+        </select>
 
         <button type="submit">Cadastrar</button>
 
@@ -36,7 +42,9 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Email</th>
-        <th>IdEquipe</th>
+        @* <th>Equipe</th> *@
+        @* <th>IdEquipe</th> *@
+        <th>Equipe</th>
         <th>Excluir</th>
         <th>Editar</th>
     </thead>
@@ -48,8 +56,12 @@
             <tr>
                 <td>@jogador.IdJogador</td>
                 <td>@jogador.Nome</td>
-                <td>@jogador.Email</td> @* Realizar a criação do menu de escolha de times*@
-                <td>@jogador.IdEquipe</td>
+                <td>@jogador.Email</td>
+                @* <td>@jogador.Equipe.Nome</td> *@
+                @* <td>@jogador.IdEquipe</td> *@
+                <td>
+                    <img src="/img/Equipes/@jogador.Equipe.Imagem" width="50px" alt="">
+                </td>
                 <td>
                     <a asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador"> 🗑️ </a>
                 </td>

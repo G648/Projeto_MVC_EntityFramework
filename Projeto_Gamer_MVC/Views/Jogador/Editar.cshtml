@@ -8,19 +8,21 @@
 
     <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
 
-        <input type="hidden" name="IdEquipe" value="@ViewBag.Jogador.IdJogador">
+        <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
         <label for="">Nome</label>
         <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
 
         <label for="">Email </label>
-        <input type="text" name="Nome" value="@ViewBag.Jogador.Email">
+        <input type="email" name="Email" value="@ViewBag.Jogador.Email">
 
         <label for="">Senha</label>
-        <input type="text" name="Nome" value="@ViewBag.Jogador.Senha">
+        <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+@* 
+        <select name="IdEquipe" id=""></select> *@
 
-        @* <label for="">IdEquipe</label>
-        <input type="text" name="Nome" value="@ViewBag.Jogador.IdEquipe"> *@
+        <label for="">IdEquipe</label>
+        <input type="text" name="IdEquipe" value="@ViewBag.Jogador.IdEquipe">
 
         <button type="submit">Atualizar</button>
 

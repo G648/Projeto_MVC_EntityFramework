@@ -32,7 +32,7 @@ namespace Projeto_Gamer_MVC.Controllers
         }
 
         //criando método cadastrar
-        [Route("Cadastar")]
+        [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
             Jogador novoJogador = new Jogador();
@@ -70,6 +70,7 @@ namespace Projeto_Gamer_MVC.Controllers
         {
             Jogador jogadorEditar = conexaoBanco.Jogador.First(x => x.IdJogador == id)!;
 
+            // ViewBag.Equipe = conexaoBanco.Equipe.ToList();
             ViewBag.Jogador = jogadorEditar;
 
             return View("Editar");
@@ -88,14 +89,14 @@ namespace Projeto_Gamer_MVC.Controllers
             
             atualizarJogador.Senha = form["Senha"].ToString();
             
-            // atualizarJogador.IdEquipe = int.Parse(form["IdEquipe"]);
+            atualizarJogador.IdEquipe = int.Parse(form["IdEquipe"]);
 
             Jogador jogadorEncontrado = conexaoBanco.Jogador.First(x => x.IdJogador == atualizarJogador.IdJogador);
 
             jogadorEncontrado.Nome = atualizarJogador.Nome;
             jogadorEncontrado.Email = atualizarJogador.Email;
             jogadorEncontrado.Senha = atualizarJogador.Senha;
-            // jogadorEncontrado.IdEquipe = atualizarJogador.IdEquipe;
+            jogadorEncontrado.IdEquipe = atualizarJogador.IdEquipe;
 
             conexaoBanco.Jogador.Update(jogadorEncontrado);
 
