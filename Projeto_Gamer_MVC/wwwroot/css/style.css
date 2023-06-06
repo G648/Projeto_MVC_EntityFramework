@@ -1,0 +1,1106 @@
+@font-face {
+    font-family: "titilium web";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "titilium web italic" ;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Italic.ttf);
+}
+
+@font-face {
+    font-family: "titilium web bold";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "titilium web regular";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'titilium web black';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* configuracoes genericas */
+
+.mostrarMenu{
+    left: 0 !important;
+    opacity: 1 !important;
+}
+.mostrarMenuDireita{
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.container-grid{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+body{
+    background-color: #1b1426;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #1b1426;
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logotipo-mobile{
+    width: 87.5px;
+    height: 25px;
+}
+
+.logotipo-desktop{
+    display: none;
+}
+
+.up-header-box {
+    display: none;
+}
+
+#menu-lateral{
+    position: fixed;
+    top: 60px;
+    left:  -270px;
+    width: 270px;
+    height: calc(100vh - 60px);
+    display: flex;
+    z-index: 1000;
+    transition: left 0.4s, opacity 0.5s;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38,40%));
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 0px 30px;
+    opacity: 0;
+}
+
+.link-centro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 346px;
+    width: 100%;
+}
+
+.link-centro a {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-family: "inter";
+    font-size: 15px;
+    color: white;
+    border-bottom: 2px solid #f9aa01;
+    height: 80px;
+    width: 270px;
+}
+
+.contatos-mobile span{
+    font-family: "inter";
+    font-size: 15px;
+    color: white;
+}
+
+.contatos-mobile{
+    width: 100%;
+    text-align: center;
+}
+.contatos-mobile a{
+    text-decoration: none;
+}
+
+.tel-box-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 2px solid #f9aa01;
+    height: 80px;
+}
+
+.tel-box-mobile img {
+    margin-left: 40px;
+}
+
+.tel-box-mobile span {
+    margin-right: 40px;
+}
+
+.mail-box-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 80px;
+}
+
+.mail-box-mobile img {
+    margin-left: 30px;
+}
+
+.mail-box-mobile span {
+    margin-right: 10px;
+}
+
+#menu-lateral-direita {
+    position: fixed;
+    top: 60px;
+    right: -66px;
+    width: 66px;
+    height: 170px;
+    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38,40%));
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 0px 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    transition: right 0.4s, opacity 0.5s;
+    opacity: 0;
+}
+
+.icons-left{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    height: 138px;
+    justify-content: space-between;
+}
+
+.upper-header-mobile{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+}
+
+.social-box-mobile {
+    margin-bottom: 60px;
+    display: flex;
+    width: 152px;
+    height: 31px;
+    justify-content: space-between;
+}
+
+.social-box-mobile .facebook{
+    width: 15px;
+    height: 29px;
+}
+
+.social-box-mobile .linkedin{
+    width: 26px;
+    height: 26px;
+    margin-top: 3px;
+}
+
+.social-box-mobile .instagram{
+    width: 30px;
+    height: 30px;
+}
+
+/* MAIN CONTENT */
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 606px;
+    border-top: inset 60px transparent;
+    box-sizing: border-box
+}
+
+.banner-content{
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content h1{
+    margin-top: 20px;
+    color: white;
+    font-family: "titilium web";
+    font-size: 40px;
+    text-shadow: 0px 0px 7px #FF0000;
+}
+
+.banner a {
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+    color: #1b1426;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f9aa01;
+    font-family: "titilium web bold";
+    font-size: 24px;
+}
+
+/* POPULARES */
+
+.most-popular{
+    position: relative;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+}
+
+.most-popular-box img{
+    position: relative;
+    width: 100%;
+    height: 189px;
+}
+
+.most-popular-box{
+    width: 337px;
+    position: relative;
+}
+
+.box-vidro {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 147px;
+    width: 100%;
+    height: 43px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0px 0px 8px 8px;
+    background-image: linear-gradient(to right,rgb(239, 239, 239, 60%), rgb(239, 239, 239, 20%));
+    backdrop-filter: blur(5px);
+}
+
+.yellow-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background-color: #f9aa01;
+    width: 135px;
+    height: 35px;
+
+    transform: skewX(-45deg);
+}
+
+.yellow-box h2{
+    transform: skewX(45deg);
+    font-size: 14px;
+    font-family: "titilium web bold";
+    padding-top: 8px;
+}
+
+/* "SECAO INFO */
+
+.programer-team{
+    background-color: #f9aa01;
+    height: 1535px;
+}
+
+.info-article{
+    position: relative;
+}
+
+.info-1{
+    margin-bottom: 300px;
+}
+
+.info-2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.border-gradient2{
+    padding: 1px;
+    width: 210px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1));    
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    right: 127px;
+}
+
+.info-box2 p{
+    font-size: 12px !important;
+}
+
+.programer-team h2{
+    font-size: 15px;
+    font-family: "titilium web";
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.programer-team hr {
+    width: 204px;
+    margin: 0 auto 100px ;
+    border: 1px solid #1b1426;
+}
+
+.border-gradient{
+    padding: 1px;
+    width: 210px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .1));    
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 127px;
+}
+
+.info-box{
+    height: 262px;
+    background: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, 0.8));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.info-box h3{
+    font-size: 16px;
+    font-family: "titilium web";
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.info-box p{
+    color: white;
+    font-family: "quicksand";
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.info-box2 img{
+    margin-left: 20px;
+}
+
+.perso2-mobile{
+    width: 332px;
+    height: 428px;
+}
+
+.perso1-mobile{
+    width: 314px;
+    height: 511px;
+}
+
+.perso1-desktop{
+    display: none;
+}
+
+.perso2-desktop{
+    display: none;
+}
+
+/* SEçÂO NOTICIAS */
+
+.news{
+    background-image: url(../images/backgrund_notícias\ 1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 3675px;
+}
+
+.news::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.news-card img{
+    width: 100%;
+}
+
+.news h2{
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-family: "titilium web";
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.news hr {
+    position: relative;
+    width: 204px;
+    margin: 0 auto 60px ;
+    border: 1px solid #f9aa01;
+}
+
+.text-box-news{
+    border-radius: 8px;
+    width: 100%;
+    height: 387px;
+    background-image: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    color: white;
+}
+
+.text-box-news h4{
+    font-family: "titilium web";
+    font-size: 24px;
+    font-weight: 1;
+    padding: 25px 25px 0 25px;
+}
+.text-box-news p{
+    padding: 20px 25px 0 25px;
+    font-family: "quicksand";
+    font-size: 16px;
+}
+
+.news-card{
+    margin-bottom: 20px;
+}
+
+
+
+/* FOOTER */
+.footer{
+    background-image: url(../images/backgorund-footer.png);
+    box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
+    background-size: cover;
+    height: 1531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.box1-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "quicksand";
+    font-size: 16px;
+    text-align:justify;
+}
+
+.box1-footer > img{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.box1-footer p{
+    margin-bottom: 100px;
+}
+
+.social-box-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5{
+    color: white;
+    font-family: "titilium web";
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+footer hr{
+    width: 110px;
+    border: 1px solid #f9aa01;
+}
+
+.box2-footer ul {
+    font-family: "inter";
+    font-size: 16px;
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+li a {
+    color: white ;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
+
+.inside{
+    list-style-position: none;
+}
+
+li::before {
+    content: url(../assets/icons/Line\ 27.svg);
+
+    margin-right: 12px;
+    padding-bottom: 8px;
+  }
+
+  .box2-footer ul li {
+    display: flex;
+}
+
+.box3-footer hr{
+    margin-bottom: 50px;
+}
+
+.box3-footer h2{
+    color: #f9aa01;
+    font-size: 16px;
+    font-family: "inter";
+
+}
+
+.box3-footer p{
+    color: white;
+    font-size: 16px;
+    font-family: "inter";
+}
+.box3-footer p, h2{
+    padding-bottom: 9px;
+}
+
+.box4-footer hr{
+    margin-bottom: 30px;
+    
+}
+
+.input-gradient{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background: 
+                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255,0)) border-box;
+
+                border-image-slice: 1;
+                border: 1px solid transparent;
+}
+
+.box4-footer .input-gradient input{
+    color: white;
+    padding-left: 16px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #BBAACC 0%, rgba(217, 217, 217, 0) 103.86%);
+    backdrop-filter: blur(5px);
+    outline: none;
+}
+
+.box4-footer input::placeholder{
+    font-weight: bold;
+    color: white;
+    font-family: "quicksand";
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.box4-footer button{
+    width: 100%;
+    height: 40px;
+    background-color: #f9aa01;
+    color: black;
+    font-family: "titilium web";
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 46px;
+}
+.footer-bottom a{
+    align-self: flex-end;
+    margin-top: 80px;
+    margin-right: 18px;
+}
+
+.copyright{
+    color: white;
+    font-family: "titilium web regular";
+    align-self: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:992px) {
+    
+    /* CONFIG GENERICA */
+
+.container-grid-d{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    /* border: 1px solid green; */
+}
+
+.mobile-header{
+    display: none;
+}
+
+header{
+    position: static;
+    height: 140px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.up-header-box{
+    display: flex;
+    border-bottom: 2px solid #f9aa01;
+    width: 100%;
+    height: 50px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-between;
+    width: 431px;
+}
+
+.tel-box{
+    width: 168px;
+}
+
+.mail-box{
+    width: 218px;
+}
+
+.contatos a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    font-family: "inter";
+    font-size: 12px;
+}
+
+.social-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 127px;
+}
+
+.logotipo-desktop{
+    display: block;
+}
+
+.bottom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+}
+
+#menu-lateral{
+    width: 867px;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 1;
+    box-shadow: none;
+    background-image: none;
+    backdrop-filter: none;
+    height: max-content;
+}
+
+.upper-header-mobile{
+    display: flex;
+    width: 420px;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.social-box-mobile, .contatos-mobile{
+    display: none;
+}
+
+.link-centro{
+    flex-direction: row;
+    width: 420px;
+    height: max-content;
+}
+
+.link-centro a{
+    height: max-content;
+    border: none;
+    margin-right: 59px;
+}
+
+#menu-lateral-direita{
+    right: 0;
+    opacity: 1;
+    position: static;
+    background-image: none;
+    backdrop-filter: none;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: none;
+    width: 130px;
+    height: max-content;
+}
+
+.icons-left{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+    height: 25px;
+}
+
+.link-centro a:hover{
+    color: #f9aa01;
+}
+
+/* MAIN CONTENT */
+/* BANNER */
+
+.banner{
+    background-image: url(../images/banner-desktop.png);
+    height: 720px;
+    border-top: none;
+}
+
+.banner h1{
+    font-size: 80px;
+}
+
+.banner-content a {
+    width: 200px;
+    margin-top: 450px;
+}
+
+/* ***SESSAO POPULARES ******** */
+
+.most-popular{
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.most-popular-box{
+    width: 45%;
+    height: 313px;
+    justify-content: space-between;
+}
+
+.most-popular-box img{
+    height: 100%;
+}
+
+.box-vidro{
+    width: 576px;
+    height: 81px;
+    top: 232px;
+}
+
+.yellow-box{
+    width: 221px;
+    height: 57px;
+    margin-left: 57px;
+}
+
+.yellow-box h2{
+    font-size: 20px;
+}
+
+/* Secao Programer */
+
+.programer-team{
+    height: 1000px;
+}
+
+.programer-team h2{
+    font-size: 40px;
+}
+
+.info-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 719px;
+}
+
+.border-gradient{
+    width: 360px;
+    height: 440px;
+}
+.border-gradient2{
+    width: 360px;
+    height: 440px;
+}
+.info-box{
+    justify-content: flex-start;
+    width: 360px;
+    height: 440px;
+}
+
+.info-box h3{
+    margin-top: 23px;
+    font-size: 25px;
+}
+
+.info-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 248px;
+    height: 49px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#prof {
+    font-size: 16px !important;
+}
+
+.info-box .icon1{
+    margin-top: 56px;
+    width: 143px;
+    height: 143px;
+}
+
+.info-box .icon2{
+    margin-top: 38px;
+    width: 162px;
+    height: 162px;
+}
+
+.border-gradient{
+    left: 230px !important;
+    top: 150px !important;
+}
+
+.border-gradient2{
+    right: 250px !important;
+    top: 150px !important;
+}
+
+.info-article{
+    bottom: 60px !important;
+}
+
+.info-2{
+    position: relative;
+    bottom: 40px;
+}
+
+.info-2 img{
+    width: 521px;
+    height: 692px;
+    margin-top: -40px;
+}
+
+.perso1-mobile{
+    display: none;
+}
+
+.perso1-desktop{
+    display: flex;
+}
+
+.perso2-mobile{
+    display:none;
+}
+
+.perso2-desktop{
+    display: flex;
+}
+
+/*  NEWS  */
+
+.news{
+    background-image: url(../images/backgrund_notícias_desktop.png);
+    height: 1175px;
+}
+
+
+.news h2{
+    font-size: 40px
+    
+}
+
+.news-card{
+    width: 285px;
+    height: 387px;
+    margin-bottom: 60px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+
+.news-card:hover{
+    box-shadow: 15px 0px 35px;
+}
+.news-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer{
+    background-image: url(../images/backgroung_footer-desktop.png);
+    box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
+    height: 520px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer h5{
+    margin-top: 0;
+}
+
+.footer-flex{
+    height: 257px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.box1-footer {
+    width: 294px;
+    height: 300px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.box1-footer *{
+    margin: 0 !important;
+}
+.social-box-footer{
+    width: 206px;
+    justify-content: space-between;
+
+}
+
+.box2-footer{
+    width: 200px;
+    height: 257px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.box3-footer{
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.box4-footer{
+    align-self: flex-start;
+    padding-bottom: 80px;
+}
+
+.box2-footer li {
+    margin-bottom: 12px;
+}
+
+.box2-footer li a:hover{
+    color: #f9aa01;
+}
+
+.input-gradient{
+    width: 285px;
+    margin-top: 52px;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 46px;
+}
+
+.footer-bottom input{
+    margin-top: 0;
+}
+
+h5{
+    font-size: 30px;
+}
+
+}

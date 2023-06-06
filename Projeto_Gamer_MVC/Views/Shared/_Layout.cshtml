@@ -1,40 +1,124 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Projeto_Gamer_MVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Projeto_Gamer_MVC.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Projeto_Gamer_MVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a  class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a  class="nav-link text-dark" asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
-                        </li>
-                    </ul>
+
+        <div class="container-grid header-flex mobile-header">
+
+            <img src="~/assets/icons/icon-menu.svg" alt="" onclick="mostrarMenu()">
+            <img class="logotipo-mobile" src="images/logo-gamer.png" alt="">
+            <img src="~/assets/icons/icon-trespontos.svg" alt="" onclick="mostrarMenuDireita()">
+
+        </div>
+
+        <div class="up-header-box">
+
+            <div class="container-grid-d flex">
+                <div class="contatos">
+
+                    <a href="" class="tel-box">
+                        <img src="~/assets/icons/icon-tel.svg" alt="">
+                        <span>(11) 99999-9999</span>
+                    </a>
+
+                    <a href="" class="mail-box">
+                        <img src="~/assets/icons/icon-mail.svg" alt="">
+                        <span>contato@gamer.com.br<span>
+                    </a>
+
+                </div>
+
+                <div class="social-box">
+                    <a href="">
+                        <img class="facebook" src="~/assets/icons/icon-face.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="linkedin" src="~/assets/icons/icon-linke.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="instagram" src="~/assets/icons/icon-insta.svg" alt="">
+                    </a>
                 </div>
             </div>
-        </nav>
+
+        </div>
+
+        <div class="bottom-header container-grid-d">
+
+            <div id="menu-lateral">
+
+                <img class="logotipo-desktop" src="images/logo-gamer.png" alt="">
+
+                <div class="upper-header-mobile">
+
+                    <nav class="link-centro">
+
+
+                        <a asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+
+
+                        <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
+
+
+                        <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
+
+
+                    </nav>
+
+                    <div class="contatos-mobile">
+
+                        <a href="">
+                            <div class="tel-box-mobile">
+                                <img src="~/assets/icons/icon-tel.svg" alt="">
+                                <span>(11) 99999-9999</span>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="mail-box-mobile">
+                                <img src="~/assets/icons/icon-mail.svg" alt="">
+                                <span>contato@gamer.com.br<span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="social-box-mobile">
+
+                    <a href=""><img class="facebook" src="~/assets/icons/icon-face.svg" alt=""></a>
+                    <a href=""><img class="linkedin" src="~/assets/icons/icon-linke.svg" alt=""></a>
+                    <a href=""><img class="instagram" src="~/assets/icons/icon-insta.svg" alt=""></a>
+
+                </div>
+
+            </div>
+
+            <div id="menu-lateral-direita">
+
+                <div class="icons-left">
+
+                    <a asp-area="" asp-controller="Home" asp-action="Login"><input type="image"
+                            src="~/assets/icons/icon-user.svg"></a>
+                    <a href=""><img src="~/assets/icons/icon-bag.svg" alt=""></a>
+                    <a href=""><img src="~/assets/icons/icon-lupa.svg" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -42,14 +126,92 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Projeto_Gamer_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer">
+
+
+        <section class="container-grid container-grid-d footer-flex">
+
+            <article class="box1-footer">
+
+                <img src="~/images/logo-gamer.png" alt="">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte a nossa equipe talentosa e
+                    altamente comprometida.</p>
+
+                <div class="social-box-footer">
+
+                    <a href=""><img src="~/assets/icons/icon-face-footer.svg" alt=""></a>
+                    <a href=""><img src="~/assets/icons/icon-linkedin-footer.svg" alt=""></a>
+                    <a href=""><img src="~/assets/icons/icon-insta-footer.svg" alt=""></a>
+
+                </div>
+
+            </article>
+
+            <article class="box2-footer">
+                <h5>Links Úteis</h5>
+                <hr>
+
+                <ul class="inside">
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="jogadores.html">Jogadores</a></li>
+                    <li> <a href="">Notícias</a></li>
+                    <li> <a href="login.html">Login</a></li>
+                    <li> <a href="equipes.html">Equipes</a></li>
+            </article>
+
+            <article class="box3-footer">
+                <h5>Contatos</h5>
+                <hr>
+
+                <h2>Localização:</h2>
+                <p>Rua Niterói,180 - São Caetano do Sul - SP</p>
+
+                <h2>Junte-se a nós:</h2>
+                <p>contato@gamer.com.br</p>
+
+                <h2>Telefone:</h2>
+                <p>(11) 99999-9999</p>
+
+            </article>
+
+            <article class="box4-footer">
+                <h5>Newsletter</h5>
+                <hr>
+
+                <div class="input-gradient">
+                    <input type="email" placeholder="Digite seu e-mail...">
+                </div>
+                <button>Enviar</button>
+
+            </article>
+
+
+
+        </section>
+
+        <div class="footer-bottom container-grid-d container-grid">
+            <a href=""><input class="top-button" type="image" src="~/assets/icons/icon-arrow.svg"></a>
+
+            <p class="copyright">©Copyright2022-GamerJogosDigitais</p>
+
         </div>
     </footer>
+
+    <script>
+
+        function mostrarMenu() {
+            document.getElementById("menu-lateral").classList.toggle("mostrarMenu");
+        }
+        function mostrarMenuDireita() {
+            document.getElementById("menu-lateral-direita").classList.toggle("mostrarMenuDireita")
+        }
+    </script>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

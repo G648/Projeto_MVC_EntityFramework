@@ -5,12 +5,328 @@
       "PackagePath": "staticwebassets\\Projeto_Gamer_MVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\Inter-VariableFont_slnt,wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\Inter-VariableFont_slnt,wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Inter\\static\\Inter-Thin.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Inter\\static\\Inter-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\Quicksand-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\Quicksand-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Quicksand\\static\\Quicksand-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Quicksand\\static\\Quicksand-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Italic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Titillium_Web\\TitilliumWeb-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\Line 27.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\Line 27.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-bag.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-control.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-control.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-face-footer.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-face-footer.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-face.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-face.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-gamer.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-gamer.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-insta-footer.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-insta-footer.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-insta.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-insta.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-key.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-key.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-linke.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-linke.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-linkedin-footer.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-linkedin-footer.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-lupa.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-lupa.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-mail.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-mail.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-menu.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-tel.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-tel.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-trash.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-trespontos.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-trespontos.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-user-white.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-user-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\assets\\icons\\icon-user.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\icon-user.svg"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\Banner_Login.png",
+      "PackagePath": "staticwebassets\\images\\Banner_Login.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\Banner_cadastro_de_Equipe.png",
+      "PackagePath": "staticwebassets\\images\\Banner_cadastro_de_Equipe.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\Banner_cadastro_de_Jogadores.png",
+      "PackagePath": "staticwebassets\\images\\Banner_cadastro_de_Jogadores.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\LOUD_LOGO 1.png",
+      "PackagePath": "staticwebassets\\images\\LOUD_LOGO 1.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\backgorund-footer.png",
+      "PackagePath": "staticwebassets\\images\\backgorund-footer.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\backgroung_footer-desktop.png",
+      "PackagePath": "staticwebassets\\images\\backgroung_footer-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\backgrund_notícias 1.png",
+      "PackagePath": "staticwebassets\\images\\backgrund_notícias 1.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\backgrund_notícias_desktop.png",
+      "PackagePath": "staticwebassets\\images\\backgrund_notícias_desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\banner-desktop.png",
+      "PackagePath": "staticwebassets\\images\\banner-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\banner-login-desktop.png",
+      "PackagePath": "staticwebassets\\images\\banner-login-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\banner_cadastro_de_equipe_d.png",
+      "PackagePath": "staticwebassets\\images\\banner_cadastro_de_equipe_d.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\banner_cadastro_de_jogador.png",
+      "PackagePath": "staticwebassets\\images\\banner_cadastro_de_jogador.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\cs-image-desktop.png",
+      "PackagePath": "staticwebassets\\images\\cs-image-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\cs-image.png",
+      "PackagePath": "staticwebassets\\images\\cs-image.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\fifa-image-desktop.png",
+      "PackagePath": "staticwebassets\\images\\fifa-image-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\fifa-image.png",
+      "PackagePath": "staticwebassets\\images\\fifa-image.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-jinx-desktop.png",
+      "PackagePath": "staticwebassets\\images\\img-jinx-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-jinx.png",
+      "PackagePath": "staticwebassets\\images\\img-jinx.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-killjoy-desktop.png",
+      "PackagePath": "staticwebassets\\images\\img-killjoy-desktop.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-killjoy.png",
+      "PackagePath": "staticwebassets\\images\\img-killjoy.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-news1.png",
+      "PackagePath": "staticwebassets\\images\\img-news1.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-news2.png",
+      "PackagePath": "staticwebassets\\images\\img-news2.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\img-news3.png",
+      "PackagePath": "staticwebassets\\images\\img-news3.png"
+    },
+    {
+      "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\images\\logo-gamer.png",
+      "PackagePath": "staticwebassets\\images\\logo-gamer.png"
     },
     {
       "Id": "C:\\Users\\45845444845\\Desktop\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\Captura de Tela (1).png",
