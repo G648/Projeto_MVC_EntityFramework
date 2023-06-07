@@ -261,10 +261,10 @@ header {
     align-items: center;
 }
 
-.border-gradient{
-    margin-top: 138px;
+.border-gradient-jogadores{
+    margin-top: 120px;
     padding: 1px;
-    height: 650px;
+    height: 500px;
     width: 335px;
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));    
     border-radius: 8px;
@@ -342,15 +342,24 @@ header {
 
 table{
     width: 100%;
-    /* border-spacing: 0 15px;  */
-    margin-top: 90px;
+    margin-top: 45px;
 }
 
-thead, tbody{
-    display: flex;
+thead,tbody {
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 20px;
+}
+
+tbody {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+tbody::-webkit-scrollbar {
+    display: none;
 }
 
 thead tr {
@@ -722,12 +731,12 @@ header{
 }
 
 /* MAIN */
-.banner{
+.banner-desktop{
     background-image: url(../images/banner_cadastro_de_jogador.png);
 }
-.border-gradient{
+.border-gradient-jogadores{
     width: 800px;
-    height:670px;
+    height:480px;
 }
 
 .box-jogadores h1{

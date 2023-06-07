@@ -348,7 +348,13 @@ header {
     font-family: "titilium web bold";
     font-size: 24px;
     margin-top: 25px;
+    transition: 1s;
 }
+
+.box-login button:hover{
+    background-color: #7c5f1f;
+}
+
 /* FOOTER */
 .footer{
     background-image: url(../images/backgorund-footer.png);

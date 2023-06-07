@@ -14,7 +14,7 @@
 }
 
 @font-face {
-    font-family: "titilium web italic" ;
+    font-family: "titilium web italic";
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Italic.ttf);
 }
 
@@ -32,6 +32,7 @@
     font-family: 'titilium web black';
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
+
 /* RESET */
 
 * {
@@ -42,22 +43,23 @@
 
 /* configuracoes genericas */
 
-.mostrarMenu{
+.mostrarMenu {
     left: 0 !important;
     opacity: 1 !important;
 }
-.mostrarMenuDireita{
+
+.mostrarMenuDireita {
     right: 0 !important;
     opacity: 1 !important;
 }
 
-.container-grid{
+.container-grid {
     width: 90%;
     margin: 0 auto;
     max-width: 768px;
 }
 
-body{
+body {
     background-color: #1b1426;
 }
 
@@ -75,18 +77,18 @@ header {
     background-color: #1b1426;
 }
 
-.header-flex{
+.header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logotipo-mobile{
+.logotipo-mobile {
     width: 87.5px;
     height: 25px;
 }
 
-.logotipo-desktop{
+.logotipo-desktop {
     display: none;
 }
 
@@ -94,10 +96,10 @@ header {
     display: none;
 }
 
-#menu-lateral{
+#menu-lateral {
     position: fixed;
     top: 60px;
-    left:  -270px;
+    left: -270px;
     width: 270px;
     height: calc(100vh - 60px);
     display: flex;
@@ -106,13 +108,13 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38,40%));
+    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38, 40%));
     backdrop-filter: blur(5px);
     box-shadow: 5px 0px 30px;
     opacity: 0;
 }
 
-.link-centro{
+.link-centro {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -134,17 +136,18 @@ header {
     width: 270px;
 }
 
-.contatos-mobile span{
+.contatos-mobile span {
     font-family: "inter";
     font-size: 15px;
     color: white;
 }
 
-.contatos-mobile{
+.contatos-mobile {
     width: 100%;
     text-align: center;
 }
-.contatos-mobile a{
+
+.contatos-mobile a {
     text-decoration: none;
 }
 
@@ -186,7 +189,7 @@ header {
     right: -66px;
     width: 66px;
     height: 170px;
-    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38,40%));
+    background-image: linear-gradient(rgb(27, 20, 38, 70%), rgb(27, 20, 38, 40%));
     backdrop-filter: blur(5px);
     box-shadow: 5px 0px 30px;
     align-items: center;
@@ -197,7 +200,7 @@ header {
     opacity: 0;
 }
 
-.icons-left{
+.icons-left {
     display: flex;
     flex-direction: column;
     width: 20px;
@@ -205,7 +208,7 @@ header {
     justify-content: space-between;
 }
 
-.upper-header-mobile{
+.upper-header-mobile {
     display: flex;
     flex-direction: column;
     height: 510px;
@@ -219,37 +222,37 @@ header {
     justify-content: space-between;
 }
 
-.social-box-mobile .facebook{
+.social-box-mobile .facebook {
     width: 15px;
     height: 29px;
 }
 
-.social-box-mobile .linkedin{
+.social-box-mobile .linkedin {
     width: 26px;
     height: 26px;
     margin-top: 3px;
 }
 
-.social-box-mobile .instagram{
+.social-box-mobile .instagram {
     width: 30px;
     height: 30px;
 }
 
 /* ************ MAIN ************** */
-.banner{
+.banner {
     background-image: url(../images/Banner_cadastro_de_Equipe.png);
 
     height: 1231px;
 }
 
-.equipes-flex{
+.equipes-flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.box-equipes{
+.box-equipes {
     flex-direction: column;
     background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
     backdrop-filter: blur(5px);
@@ -265,32 +268,32 @@ header {
     align-items: center;
 }
 
-.border-gradient-equipe{
+.border-gradient-equipe {
     margin-top: 138px;
     height: 492px;
     width: 335px;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) border-box;
     border-image-slice: 1;
-    border: 2px solid transparent;   
+    border: 2px solid transparent;
     border-radius: 8px;
 
 }
 
-.box-equipes hr{
+.box-equipes hr {
     border: 2px solid #f9aa01;
     width: 250px;
     margin-bottom: 80px;
 }
 
-.box-equipes h1{
+.box-equipes h1 {
     font-size: 28px;
     margin-top: 40px;
 }
 
-.input-gradient-equipes{
+.input-gradient-equipes {
     width: 273px;
     padding: 1px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)) border-box;
     border-image-slice: 1;
     border: 2px solid transparent;
     border-radius: 8px;
@@ -310,13 +313,13 @@ header {
     outline: none;
 }
 
-.input-gradient-equipes input::placeholder{
+.input-gradient-equipes input::placeholder {
     color: white;
     font-family: "titilium web regular";
     font-size: 16px;
 }
 
-.box-equipes .cadastro{
+.box-equipes .cadastro {
     width: 273px;
     height: 40px;
     border-radius: 8px;
@@ -327,7 +330,7 @@ header {
     margin-top: 49px;
 }
 
-.image-equipe input::file-selector-button{
+.image-equipe input::file-selector-button {
     background-color: white;
     width: 124px;
     height: 40px;
@@ -336,24 +339,25 @@ header {
     font-family: "titilium web bold";
 }
 
-table{
+table {
     width: 100%;
     /* border-spacing: 0 15px;  */
     margin-top: 90px;
 }
 
-thead, tbody{
+thead,tbody {
     display: block;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
 
-tbody{
+tbody {
     overflow-y: scroll;
     height: 450px;
 }
-tbody::-webkit-scrollbar{
+
+tbody::-webkit-scrollbar {
     display: none;
 }
 
@@ -363,7 +367,9 @@ thead tr {
     border-bottom: 3px solid #F9AA01;
 }
 
-table, tr, td{
+table,
+tr,
+td {
     border-collapse: collapse;
 }
 
@@ -380,7 +386,7 @@ table th {
     font-size: 20px;
 }
 
-.table-line{
+.table-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -392,18 +398,18 @@ table th {
     font-size: 20px;
     height: 70px;
     border-radius: 8px;
-    background: linear-gradient(to right, rgba(27, 20, 38,.9), rgba(60, 3, 65,0.03)) padding-box,
-    linear-gradient(to right, rgba(255, 255, 255,.6), rgba(255, 255, 255,0)) border-box;
+    background: linear-gradient(to right, rgba(27, 20, 38, .9), rgba(60, 3, 65, 0.03)) padding-box,
+        linear-gradient(to right, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0)) border-box;
     border-image-slice: 1;
     margin-bottom: 20px;
     border: 2px solid transparent;
 }
 
-table a{
+table a {
     background-color: transparent !important;
 }
 
-tbody tr td{
+tbody tr td {
     width: 100%;
     height: 38px;
     display: flex;
@@ -413,12 +419,12 @@ tbody tr td{
 }
 
 
-.table-line > td:last-of-type{
+.table-line>td:last-of-type {
     border-right: none;
 }
 
 /* **************** FOOTER ************* */
-.footer{
+.footer {
     background-image: url(../images/backgorund-footer.png);
     box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
     background-size: cover;
@@ -428,44 +434,44 @@ tbody tr td{
     justify-content: center;
 }
 
-.footer-flex{
+.footer-flex {
     display: flex;
     flex-direction: column;
 }
 
-.box1-footer{
+.box1-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     font-family: "quicksand";
     font-size: 16px;
-    text-align:justify;
+    text-align: justify;
 }
 
-.box1-footer > img{
+.box1-footer>img {
     margin-top: 90px;
     margin-bottom: 90px;
 }
 
-.box1-footer p{
+.box1-footer p {
     margin-bottom: 100px;
 }
 
-.social-box-footer{
+.social-box-footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-h5{
+h5 {
     color: white;
     font-family: "titilium web";
     font-size: 40px;
     margin-top: 100px;
 }
 
-footer hr{
+footer hr {
     width: 110px;
     border: 1px solid #f9aa01;
 }
@@ -480,14 +486,14 @@ footer hr{
 }
 
 li a {
-    color: white ;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
     margin-right: 25px;
-  }
+}
 
-.inside{
+.inside {
     list-style-position: none;
 }
 
@@ -496,49 +502,51 @@ li::before {
 
     margin-right: 12px;
     padding-bottom: 8px;
-  }
+}
 
-  .box2-footer ul li {
+.box2-footer ul li {
     display: flex;
 }
 
-.box3-footer hr{
+.box3-footer hr {
     margin-bottom: 50px;
 }
 
-.box3-footer h2{
+.box3-footer h2 {
     color: #f9aa01;
     font-size: 16px;
     font-family: "inter";
 
 }
 
-.box3-footer p{
+.box3-footer p {
     color: white;
     font-size: 16px;
     font-family: "inter";
 }
-.box3-footer p, h2{
+
+.box3-footer p,
+h2 {
     padding-bottom: 9px;
 }
 
-.box4-footer hr{
+.box4-footer hr {
     margin-bottom: 30px;
-    
+
 }
 
-.input-gradient{
+.input-gradient {
     width: 100%;
     height: 40px;
     border-radius: 8px;
-    background: 
-                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255,0)) border-box;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) border-box;
 
-                border-image-slice: 1;
-                border: 1px solid transparent;
+    border-image-slice: 1;
+    border: 1px solid transparent;
 }
 
-.box4-footer .input-gradient input{
+.box4-footer .input-gradient input {
     color: white;
     padding-left: 16px;
     background: transparent;
@@ -551,7 +559,7 @@ li::before {
     outline: none;
 }
 
-.box4-footer input::placeholder{
+.box4-footer input::placeholder {
     font-weight: bold;
     color: white;
     font-family: "quicksand";
@@ -559,7 +567,7 @@ li::before {
     margin-right: 16px;
 }
 
-.box4-footer button{
+.box4-footer button {
     width: 100%;
     height: 40px;
     background-color: #f9aa01;
@@ -572,7 +580,7 @@ li::before {
     margin-top: 15px;
 }
 
-.footer-bottom{
+.footer-bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,282 +588,288 @@ li::before {
     width: 100%;
     height: 46px;
 }
-.footer-bottom a{
+
+.footer-bottom a {
     align-self: flex-end;
     margin-top: 80px;
     margin-right: 18px;
 }
 
-.copyright{
+.copyright {
     color: white;
     font-family: "titilium web regular";
     align-self: center;
 }
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width:992px) {
-    
+
     /* CONFIG GENERICA */
 
-.container-grid-d{
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1280px;
-    /* border: 1px solid green; */
-}
+    .container-grid-d {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1280px;
+        /* border: 1px solid green; */
+    }
 
-.mobile-header{
-    display: none;
-}
+    .mobile-header {
+        display: none;
+    }
 
-header{
-    position: static;
-    height: 140px;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-
-.up-header-box{
-    display: flex;
-    border-bottom: 2px solid #f9aa01;
-    width: 100%;
-    height: 50px;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-
-.contatos{
-    display: flex;
-    justify-content: space-between;
-    width: 431px;
-}
-
-.tel-box{
-    width: 168px;
-}
-
-.mail-box{
-    width: 218px;
-}
-
-.contatos a{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-decoration: none;
-    align-items: center;
-    color: white;
-    font-family: "inter";
-    font-size: 12px;
-}
-
-.social-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 127px;
-}
-
-.logotipo-desktop{
-    display: block;
-}
-
-.bottom-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90px;
-    width: 100%;
-}
-
-#menu-lateral{
-    width: 867px;
-    position: static;
-    flex-direction: row;
-    justify-content: space-between;
-    opacity: 1;
-    height: auto;
-    box-shadow: none;
-    background-image: none;
-    backdrop-filter: none;
-}
-
-.upper-header-mobile{
-    height: max-content;
-    display: flex;
-    width: 420px;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-box-mobile, .contatos-mobile{
-    display: none;
-}
-
-.link-centro{
-    flex-direction: row;
-    width: 420px;
-    height: max-content;
-}
-
-.link-centro a{
-    height: max-content;
-    border: none;
-    margin-right: 59px;
-}
-
-#menu-lateral-direita{
-    right: 0;
-    opacity: 1;
-    position: static;
-    background-image: none;
-    backdrop-filter: none;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: none;
-    width: 130px;
-    height: 30px;
-}
-
-.icons-left{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 130px;
-    height: 25px;
-}
-
-.link-centro a:hover{
-    color: #f9aa01;
-}
+    header {
+        position: static;
+        height: 140px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 
 
+    .up-header-box {
+        display: flex;
+        border-bottom: 2px solid #f9aa01;
+        width: 100%;
+        height: 50px;
+    }
 
-/* MAIN */
-.banner{
-    background-image: url(/images/banner_cadastro_de_equipe_d.png);
-    background-size: cover;
-}
-.input-gradient-equipes{
-    width: 80%;
-}
-.border-gradient-equipe{
-    width: 800px;
-    height: 530px;
-}
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.box-equipes h1{
-    font-size: 40px;
-    font-family: 'titilium web black';
-}
+    .contatos {
+        display: flex;
+        justify-content: space-between;
+        width: 431px;
+    }
 
-.box-equipes hr{
-    width: 390px;
-}
+    .tel-box {
+        width: 168px;
+    }
 
-.image-equipe input::file-selector-button{
-    width: 334px;
-}
+    .mail-box {
+        width: 218px;
+    }
 
-tbody > tr:last-of-type{
-    display: none;
-}
+    .contatos a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        font-family: "inter";
+        font-size: 12px;
+    }
 
-.table-line{
-    height: 125px;
-}
+    .social-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 127px;
+    }
 
-table {
-    margin-top: 20px;
-}
+    .logotipo-desktop {
+        display: block;
+    }
 
-/* FOOTER */
-.footer{
-    background-image: url(../images/backgroung_footer-desktop.png);
-    box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
-    height: 520px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .bottom-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        width: 100%;
+    }
 
-.footer h5{
-    margin-top: 0;
-}
+    #menu-lateral {
+        width: 867px;
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 1;
+        height: auto;
+        box-shadow: none;
+        background-image: none;
+        backdrop-filter: none;
+    }
 
-.footer-flex{
-    height: 257px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
+    .upper-header-mobile {
+        height: max-content;
+        display: flex;
+        width: 420px;
+        align-items: center;
+        justify-content: center;
+    }
 
-.box1-footer {
-    width: 294px;
-    height: 300px;
-    align-items: flex-start;
-    justify-content: space-around;
-}
+    .social-box-mobile,
+    .contatos-mobile {
+        display: none;
+    }
 
-.box1-footer *{
-    margin: 0 !important;
-}
-.social-box-footer{
-    width: 206px;
-    justify-content: space-between;
+    .link-centro {
+        flex-direction: row;
+        width: 420px;
+        height: max-content;
+    }
 
-}
+    .link-centro a {
+        height: max-content;
+        border: none;
+        margin-right: 59px;
+    }
 
-.box2-footer{
-    width: 200px;
-    height: 257px;
-    margin-bottom: 20px;
-    align-self: flex-start;
-}
+    #menu-lateral-direita {
+        right: 0;
+        opacity: 1;
+        position: static;
+        background-image: none;
+        backdrop-filter: none;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: none;
+        width: 130px;
+        height: 30px;
+    }
 
-.box3-footer{
-    margin-bottom: 10px;
-    align-self: flex-start;
-}
+    .icons-left {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 130px;
+        height: 25px;
+    }
 
-.box4-footer{
-    align-self: flex-start;
-    padding-bottom: 80px;
-}
+    .link-centro a:hover {
+        color: #f9aa01;
+    }
 
-.box2-footer li {
-    margin-bottom: 12px;
-}
 
-.box2-footer li a:hover{
-    color: #f9aa01;
-}
 
-.input-gradient{
-    width: 285px;
-    margin-top: 52px;
-}
+    /* MAIN */
+    .banner {
+        background-image: url(/images/banner_cadastro_de_equipe_d.png);
+        background-size: cover;
+    }
 
-.footer-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 1px solid green; */
-    width: 100%;
-    height: 46px;
-}
+    .input-gradient-equipes {
+        width: 80%;
+    }
 
-.footer-bottom input{
-    margin-top: 0;
-}
+    .border-gradient-equipe {
+        width: 800px;
+        height: 530px;
+    }
 
-h5{
-    font-size: 30px;
-}
+    .box-equipes h1 {
+        font-size: 40px;
+        font-family: 'titilium web black';
+    }
+
+    .box-equipes hr {
+        width: 390px;
+    }
+
+    .image-equipe input::file-selector-button {
+        width: 334px;
+    }
+
+    tbody>tr:last-of-type {
+        display: none;
+    }
+
+    .table-line {
+        height: 125px;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    /* FOOTER */
+    .footer {
+        background-image: url(../images/backgroung_footer-desktop.png);
+        box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
+        height: 520px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer h5 {
+        margin-top: 0;
+    }
+
+    .footer-flex {
+        height: 257px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .box1-footer {
+        width: 294px;
+        height: 300px;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .box1-footer * {
+        margin: 0 !important;
+    }
+
+    .social-box-footer {
+        width: 206px;
+        justify-content: space-between;
+
+    }
+
+    .box2-footer {
+        width: 200px;
+        height: 257px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+
+    .box3-footer {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+
+    .box4-footer {
+        align-self: flex-start;
+        padding-bottom: 80px;
+    }
+
+    .box2-footer li {
+        margin-bottom: 12px;
+    }
+
+    .box2-footer li a:hover {
+        color: #f9aa01;
+    }
+
+    .input-gradient {
+        width: 285px;
+        margin-top: 52px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 46px;
+    }
+
+    .footer-bottom input {
+        margin-top: 0;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
 }

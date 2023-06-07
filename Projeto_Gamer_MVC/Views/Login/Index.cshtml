@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="~/css/login.css">
+    <script src="~/js/login.js"></script>
 
 </head>
 
@@ -32,7 +33,7 @@
 
                         <form method="post" action='@Url.Action("Logar")'> @*action é um método dentro do controller *@
 
-                            <div class="input-gradient-login">
+                            <div id="email" class="input-gradient-login">
 
                                 <div class="icon-input">
                                     <img src="~/assets/icons/icon-user-white.svg" alt="">
@@ -41,7 +42,7 @@
 
                             </div>
 
-                            <div class="input-gradient-login">
+                            <div id="senha" class="input-gradient-login">
 
                                 <div class="icon-input">
                                     <img src="~/assets/icons/icon-key.svg" alt="">
@@ -52,7 +53,7 @@
 
                             <h2>@TempData.Peek("message")</h2>
 
-                            <button type="submit">Logar</button>
+                            <button class="button-index-login" type="submit">Logar</button>
 
                         </form>
 
