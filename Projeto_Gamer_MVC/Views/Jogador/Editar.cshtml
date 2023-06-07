@@ -6,22 +6,39 @@
 
 <h1>Edição de Jogadores</h1>
 
-    <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+<form method="post" action='@Url.Action("Atualizar")'>
 
-        <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
-        <label for="">Nome</label>
-        <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
+    <label for="">Nome</label>
+    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
 
-        <label for="">Email </label>
-        <input type="email" name="Email" value="@ViewBag.Jogador.Email">
+    <label for="">Email </label>
+    <input type="email" name="Email" value="@ViewBag.Jogador.Email">
 
-        <label for="">Senha</label>
-        <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+    <label for="">Senha</label>
+    <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
 
-        <label for="">IdEquipe</label>
-        <input type="text" name="IdEquipe" value="@ViewBag.Jogador.IdEquipe">
+    <label for="">Equipe</label>
 
-        <button type="submit">Atualizar</button>
+    <select name="IdEquipe" id="IdEquipe">
+        <option value="0"> Selecione uma opção:</option>
 
-    </form>
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+            @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
+            {
+
+                <option value="@equipe.IdEquipe" selected> @equipe.Nome</option>
+            }
+            else
+            {
+                <option value="@equipe.IdEquipe"> @equipe.Nome</option>
+            }
+        }
+
+    </select>
+
+    <button type="submit">Atualizar</button>
+
+</form>

@@ -25,10 +25,11 @@
 
         <label for="" >Equipe</label>
 
-        <select name="IdEquipe" id="">
-            <option value="IdEquipe">Selecione o Id da Equipe</option>
+        <select name="IdEquipe" id="IdEquipe">
+            
+            <option value="0">Selecione o Id da Equipe</option>
             @foreach (Equipe equipe in ViewBag.Equipe)
-            {
+            {                
                 <option value="@equipe.IdEquipe">@equipe.Nome</option>
             }
         </select>
@@ -42,8 +43,6 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Email</th>
-        @* <th>Equipe</th> *@
-        @* <th>IdEquipe</th> *@
         <th>Equipe</th>
         <th>Excluir</th>
         <th>Editar</th>
@@ -57,8 +56,6 @@
                 <td>@jogador.IdJogador</td>
                 <td>@jogador.Nome</td>
                 <td>@jogador.Email</td>
-                @* <td>@jogador.Equipe.Nome</td> *@
-                @* <td>@jogador.IdEquipe</td> *@
                 <td>
                     <img src="/img/Equipes/@jogador.Equipe.Imagem" width="50px" alt="">
                 </td>

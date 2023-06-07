@@ -20,6 +20,8 @@ namespace Projeto_Gamer_MVC.Controllers
         public IActionResult Index()
         {
 
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
+
             ViewBag.Jogador = conexaoBanco.Jogador.ToList();
             ViewBag.Equipe = conexaoBanco.Equipe.ToList();
             return View();
@@ -39,7 +41,7 @@ namespace Projeto_Gamer_MVC.Controllers
             novoJogador.Senha = form["Senha"].ToString();
 
             novoJogador.IdEquipe = int.Parse(form["IdEquipe"]);
-            
+
             conexaoBanco.Jogador.Add(novoJogador);
 
             conexaoBanco.SaveChanges();
@@ -47,8 +49,8 @@ namespace Projeto_Gamer_MVC.Controllers
             return LocalRedirect("~/Jogador/Listar");
         }
 
-        [Route ("Excluir/{id}")]
-        public IActionResult Excluir (int id)
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id)
         {
             Jogador jogadorEncontrado = conexaoBanco.Jogador.FirstOrDefault(x => x.IdJogador == id)!;
 
@@ -60,29 +62,34 @@ namespace Projeto_Gamer_MVC.Controllers
         }
 
         [Route("Editar/{id}")]
-        public IActionResult Editar (int id)
+        public IActionResult Editar(int id)
         {
+
+            ViewBag.Login = HttpContext.Session.GetString("UserName");
+
             Jogador jogadorEditar = conexaoBanco.Jogador.First(x => x.IdJogador == id)!;
 
             // ViewBag.Equipe = conexaoBanco.Equipe.ToList();
             ViewBag.Jogador = jogadorEditar;
 
+            ViewBag.Equipe = conexaoBanco.Equipe.ToList();
+
             return View("Editar");
         }
 
         [Route("Atualizar")]
-        public IActionResult Atualizar (IFormCollection form)
+        public IActionResult Atualizar(IFormCollection form)
         {
             Jogador atualizarJogador = new Jogador();
 
             atualizarJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
-            
+
             atualizarJogador.Nome = form["Nome"].ToString();
 
             atualizarJogador.Email = form["Email"].ToString();
-            
+
             atualizarJogador.Senha = form["Senha"].ToString();
-            
+
             atualizarJogador.IdEquipe = int.Parse(form["IdEquipe"]);
 
             Jogador jogadorEncontrado = conexaoBanco.Jogador.First(x => x.IdJogador == atualizarJogador.IdJogador);
@@ -96,7 +103,7 @@ namespace Projeto_Gamer_MVC.Controllers
 
             conexaoBanco.SaveChanges();
 
-            return LocalRedirect ("~/Jogador/Listar");
+            return LocalRedirect("~/Jogador/Listar");
         }
         // public IActionResult Atualizar (IFormCollection)
 

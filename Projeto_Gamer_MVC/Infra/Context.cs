@@ -36,7 +36,7 @@ namespace Projeto_Gamer_MVC.Infra
                 //user Id = "nome do usuário de login do banco de dados"
                 //pwd = "nome da senha do banco de dados"
 
-                optionsBuilder.UseSqlServer("Data Source =DESKTOP-FPV0HLV; Initial Catalog = projetoGamerManhaMVC; User Id = sa; pwd = Senai@134; TrustServerCertificate = true"); // --> gerenciador do banco de dados
+                optionsBuilder.UseSqlServer("Data Source = NOTE15-S15; Initial Catalog = projetoGamerManhaMVC; User Id = sa; pwd = Senai@134; TrustServerCertificate = true"); // --> gerenciador do banco de dados
 
             }
         }

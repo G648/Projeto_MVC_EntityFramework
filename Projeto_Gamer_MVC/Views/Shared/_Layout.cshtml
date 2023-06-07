@@ -16,7 +16,7 @@
         <div class="container-grid header-flex mobile-header">
 
             <img src="~/assets/icons/icon-menu.svg" alt="" onclick="mostrarMenu()">
-            <img class="logotipo-mobile" src="images/logo-gamer.png" alt="">
+            <img class="logotipo-mobile" src="~/images/logo-gamer.png" alt="">
             <img src="~/assets/icons/icon-trespontos.svg" alt="" onclick="mostrarMenuDireita()">
 
         </div>
@@ -57,24 +57,20 @@
 
             <div id="menu-lateral">
 
-                <img class="logotipo-desktop" src="images/logo-gamer.png" alt="">
+                <img class="logotipo-desktop" src="~/images/logo-gamer.png" alt="">
 
                 <div class="upper-header-mobile">
 
                     <nav class="link-centro">
 
                             @* posteriormente vamos alterar a aspcontroller home para login *@
-                        <a asp-area="" asp-controller="home" asp-action="Login">Login</a>
-
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
 
                         <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
 
-
                         <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
 
-
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
-
+                        <a asp-area="" asp-controller="Login" asp-action="Login">Login</a>
 
                     </nav>
 
@@ -111,7 +107,7 @@
 
                 <div class="icons-left">
 
-                    <a asp-area="" asp-controller="Home" asp-action="Login"><input type="image"
+                    <a asp-area="" asp-controller="Login" asp-action="Login"><input type="image"
                             src="~/assets/icons/icon-user.svg"></a>
                     <a href=""><img src="~/assets/icons/icon-bag.svg" alt=""></a>
                     <a href=""><img src="~/assets/icons/icon-lupa.svg" alt=""></a>

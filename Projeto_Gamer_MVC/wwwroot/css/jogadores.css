@@ -144,9 +144,6 @@ header {
     width: 100%;
     text-align: center;
 }
-.contatos-mobile a{
-    text-decoration: none;
-}
 
 .tel-box-mobile {
     display: flex;
@@ -212,7 +209,7 @@ header {
 }
 
 .social-box-mobile {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     display: flex;
     width: 152px;
     height: 31px;
@@ -235,21 +232,21 @@ header {
     height: 30px;
 }
 
-/* ************ MAIN ************** */
+/* MAIN */
 .banner{
-    background-image: url(../images/Banner_cadastro_de_Equipe.png);
-
-    height: 1231px;
+    background-image: url(../images/Banner_cadastro_de_Jogadores.png);
+    background-size: cover;
+    height: 1431px;
 }
 
-.equipes-flex{
+.jogadores-flex{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.box-equipes{
+.box-jogadores{
     flex-direction: column;
     background-image: linear-gradient(112.07deg, rgba(27, 20, 38, 0.6) 0%, rgba(60, 3, 65, 0.38) 98.83%);
     backdrop-filter: blur(5px);
@@ -260,63 +257,77 @@ header {
     color: white;
     font-family: "titilium web";
     font-size: 28px;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
 }
 
-.border-gradient-equipe{
+.border-gradient{
     margin-top: 138px;
-    height: 492px;
+    padding: 1px;
+    height: 650px;
     width: 335px;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
-    border-image-slice: 1;
-    border: 2px solid transparent;   
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .0));    
     border-radius: 8px;
-
+    
 }
 
-.box-equipes hr{
+.box-jogadores hr{
     border: 2px solid #f9aa01;
     width: 250px;
     margin-bottom: 80px;
 }
 
-.box-equipes h1{
+.box-jogadores h1{
+    text-transform: uppercase;
     font-size: 28px;
     margin-top: 40px;
 }
 
-.input-gradient-equipes{
+.input-gradient-jogadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 273px;
-    padding: 1px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255,0)) border-box;
-    border-image-slice: 1;
-    border: 2px solid transparent;
+    height: 40px;
+    padding: 1.5px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.459), rgba(255, 255, 255, 0) );
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
-.input-gradient-equipes input {
+.input-gradient-jogadores input, #select-team{
     display: flex;
+    align-items: center;
     padding-left: 16px;
-    width: 100%;
-    border-radius: 8px;
-    background-image: linear-gradient(91.13deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
-    backdrop-filter: blur(5px);
     background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #bbaacc 0%, rgba(217, 217, 217, 0.862) 103.86%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    color: white;
+    padding-left: 16px;
     height: 40px;
+    background: transparent;
     border: none;
     outline: none;
 }
 
-.input-gradient-equipes input::placeholder{
+.input-gradient-jogadores input::placeholder, #select-team{
     color: white;
     font-family: "titilium web regular";
     font-size: 16px;
 }
 
-.box-equipes .cadastro{
+#select-team{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.box-jogadores .cadastro{
     width: 273px;
     height: 40px;
     border-radius: 8px;
@@ -327,14 +338,7 @@ header {
     margin-top: 49px;
 }
 
-.image-equipe input::file-selector-button{
-    background-color: white;
-    width: 124px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    font-family: "titilium web bold";
-}
+
 
 table{
     width: 100%;
@@ -343,18 +347,10 @@ table{
 }
 
 thead, tbody{
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-}
-
-tbody{
-    overflow-y: scroll;
-    height: 450px;
-}
-tbody::-webkit-scrollbar{
-    display: none;
 }
 
 thead tr {
@@ -399,10 +395,6 @@ table th {
     border: 2px solid transparent;
 }
 
-table a{
-    background-color: transparent !important;
-}
-
 tbody tr td{
     width: 100%;
     height: 38px;
@@ -416,16 +408,12 @@ tbody tr td{
 .table-line > td:last-of-type{
     border-right: none;
 }
-
-/* **************** FOOTER ************* */
+/* Footer */
 .footer{
     background-image: url(../images/backgorund-footer.png);
     box-shadow: inset 0px 50px 80px rgb(0, 0, 0, 0.9);
     background-size: cover;
     height: 1531px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .footer-flex{
@@ -530,12 +518,9 @@ li::before {
 .input-gradient{
     width: 100%;
     height: 40px;
+    padding: 1.5px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1) );
     border-radius: 8px;
-    background: 
-                linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255,0)) border-box;
-
-                border-image-slice: 1;
-                border: 1px solid transparent;
 }
 
 .box4-footer .input-gradient input{
@@ -580,9 +565,9 @@ li::before {
     width: 100%;
     height: 46px;
 }
-.footer-bottom a{
+.top-button{
     align-self: flex-end;
-    margin-top: 80px;
+    margin-top: 110px;
     margin-right: 18px;
 }
 
@@ -590,7 +575,10 @@ li::before {
     color: white;
     font-family: "titilium web regular";
     align-self: center;
+    margin-top: 15px;
 }
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width:992px) {
@@ -675,21 +663,22 @@ header{
 #menu-lateral{
     width: 867px;
     position: static;
+    height: auto;
     flex-direction: row;
     justify-content: space-between;
     opacity: 1;
-    height: auto;
     box-shadow: none;
     background-image: none;
     backdrop-filter: none;
+    height: max-content;
 }
 
 .upper-header-mobile{
-    height: max-content;
     display: flex;
     width: 420px;
     align-items: center;
     justify-content: center;
+    height: max-content;
 }
 
 .social-box-mobile, .contatos-mobile{
@@ -718,7 +707,7 @@ header{
     justify-content: space-between;
     box-shadow: none;
     width: 130px;
-    height: 30px;
+    height: max-content;
 }
 
 .icons-left{
@@ -732,32 +721,26 @@ header{
     color: #f9aa01;
 }
 
-
-
 /* MAIN */
 .banner{
-    background-image: url(/images/banner_cadastro_de_equipe_d.png);
-    background-size: cover;
+    background-image: url(../images/banner_cadastro_de_jogador.png);
 }
-.input-gradient-equipes{
-    width: 80%;
-}
-.border-gradient-equipe{
+.border-gradient{
     width: 800px;
-    height: 530px;
+    height:670px;
 }
 
-.box-equipes h1{
-    font-size: 40px;
+.box-jogadores h1{
     font-family: 'titilium web black';
+    font-size: 40px;
 }
 
-.box-equipes hr{
-    width: 390px;
+.box-jogadores hr{
+    width: 448px;
 }
 
-.image-equipe input::file-selector-button{
-    width: 334px;
+.input-gradient-jogadores{
+    width: 80%;
 }
 
 tbody > tr:last-of-type{
@@ -768,10 +751,10 @@ tbody > tr:last-of-type{
     height: 125px;
 }
 
-table {
-    margin-top: 20px;
+table{
+    width: 800px;
+    align-self: center;
 }
-
 /* FOOTER */
 .footer{
     background-image: url(../images/backgroung_footer-desktop.png);
