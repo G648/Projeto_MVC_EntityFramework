@@ -4,6 +4,8 @@
     ViewData["Title"] = "Equipe";
 }
 
+<link rel="stylesheet" href="~/css/equipes.css">
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -15,64 +17,100 @@
 </head>
 
 <body>
-    <h1>Tela de Equipes</h1>
 
-    <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-        <label for="">Nome</label>
-        <input type="text" name="Nome" required>
+    <main>
 
-        <label for="">Imagem</label>
-        <input type="file" name="Imagem">
+        <section class="banner">
 
-        <button type="submit">Cadastrar</button>
-    </form>
+            <article class="container-grid equipes-flex container-grid-d">
 
-    @* criando uma table para armazenar nossos dados *@
+                <div class="border-gradient">
 
-    <table class="table table-striped table-responsive">
-        <thead>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Imagem</th>
-            <th>Excluir</th>
-            <th>Editar</th>
-        </thead>
+                    <form class="box-equipes" method="post" action='@Url.Action("Cadastrar")'
+                        enctype="multipart/form-data">
 
-        <tbody>
+                        <h1>Cadastro de Equipes</h1>
+                        <hr>
 
-            @foreach (Equipe equipe in ViewBag.Equipe)
-            {
+                        <div class="input-gradient-equipes">
+                            <input type="text" placeholder="Digite o nome da sua equipe...">
+                        </div>
 
-                <tr>
-                    <td>@equipe.IdEquipe</td>
-                    <td>@equipe.Nome</td>
-                    <td>
-                        <img src="/img/Equipes/@equipe.Imagem" alt="" width="60px">
+                        <div class="image-equipe">
+                            <label for="input-file"></label>
+                            <input id="input-file" name="team-avatar" type="file" accept="image/png, image/jpeg">
+                            </input>
+                        </div>
 
-                    </td>
-                    <td>
-                                @* uma forma de fazer: *@
-                        @* <a href="http://localhost:5195/Equipe/Excluir/@equipe.IdEquipe">
+                        <button class="cadastro">Cadastro</button>
 
-                            <input type="button" id="delete" value="Delete" asp-controller="Equipe" asp-action="Excluir"
+                    </form>
+
+                </div>
+
+            </article>
+
+            <article class="container-grid">
+
+                @* criando uma table para armazenar nossos dados *@
+
+                <table class="table table-striped table-responsive">
+
+                    <thead>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Imagem</th>
+                        <th>Excluir</th>
+                        <th>Editar</th>
+                    </thead>
+
+                    <tbody class="scroll">
+
+
+                        @foreach (Equipe equipe in ViewBag.Equipe)
+                        {
+
+                            <tr class="table-line">
+                                <td>@equipe.IdEquipe</td>
+                                <td>@equipe.Nome</td>
+
+                                <td>
+                                    <img src="/img/Equipes/@equipe.Imagem" alt="" width="60px">
+                                </td>
+
+                                <td>
+                                    @* uma forma de fazer: *@
+                                    @* <a href="http://localhost:5195/Equipe/Excluir/@equipe.IdEquipe">
+
+                                <input type="button" id="delete" value="Delete" asp-controller="Equipe"
+                                asp-action="Excluir"
                                 class="btn btn-primary" onclick="DeleteItem(@equipe.IdEquipe)">
-                        </a> *@
-                                @* Outra forma de fazer: *@
-                        <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"> 🗑️ </a>
+                                </a> *@
+                                    @* Outra forma de fazer: *@
+                                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir"
+                                        asp-route-id="@equipe.IdEquipe">
+                                        🗑️
+                                    </a>
 
-                    </td>
-                    <td>
-                        
-                            <a  class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe"> ✏️ </a>
+                                </td>
 
-                    </td>
-                </tr>
+                                <td>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Editar"
+                                        asp-route-id="@equipe.IdEquipe"> ✏️ </a>
+                                </td>
+                            </tr>
 
-            }
+                        }
 
-        </tbody>
+                    </tbody>
 
-    </table>
+                </table>
+
+            </article>
+
+        </section>
+
+    </main>
 
 </body>
 

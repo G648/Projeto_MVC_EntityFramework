@@ -114,11 +114,13 @@ header {
 
 .link-centro{
     text-align: center;
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 346px;
     width: 100%;
+    padding-left: 50px;
 }
 
 .link-centro a {
@@ -132,6 +134,7 @@ header {
     border-bottom: 2px solid #f9aa01;
     height: 80px;
     width: 270px;
+    border: 3px solid white;
 }
 
 .contatos-mobile span{
