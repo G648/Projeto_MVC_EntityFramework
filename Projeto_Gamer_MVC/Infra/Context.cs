@@ -29,7 +29,7 @@ namespace Projeto_Gamer_MVC.Infra
                 //initial catalog == nome do banco de dados
 
                 //AUTENTICAÇÃO PELO WINDOWS
-                //intergrated security == Autenticação pelo windows
+                //integrated security == Autenticação pelo windows
                 //TrustServerCertificate == Autenticação pelo windows 
 
                 //AUTENTICAÇÃO PELO SQLSERVER

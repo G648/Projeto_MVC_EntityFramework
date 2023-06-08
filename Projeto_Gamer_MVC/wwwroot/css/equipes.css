@@ -241,7 +241,6 @@ header {
 /* ************ MAIN ************** */
 .banner {
     background-image: url(../images/Banner_cadastro_de_Equipe.png);
-
     height: 1231px;
 }
 
@@ -416,6 +415,7 @@ tbody tr td {
     justify-content: center;
     align-items: center;
     border-right: 2px solid #F9AA01;
+    color: white;
 }
 
 
@@ -747,7 +747,7 @@ h2 {
 
     /* MAIN */
     .banner {
-        background-image: url(/images/banner_cadastro_de_equipe_d.png);
+        background-image: url(../images/banner_cadastro_de_equipe_d.png);
         background-size: cover;
     }
 
@@ -773,9 +773,6 @@ h2 {
         width: 334px;
     }
 
-    tbody>tr:last-of-type {
-        display: none;
-    }
 
     .table-line {
         height: 125px;

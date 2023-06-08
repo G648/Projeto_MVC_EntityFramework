@@ -21,9 +21,9 @@ namespace Projeto_Gamer_MVC.Controllers
         {
 
             ViewBag.Login = HttpContext.Session.GetString("UserName");
-
             ViewBag.Jogador = conexaoBanco.Jogador.ToList();
             ViewBag.Equipe = conexaoBanco.Equipe.ToList();
+
             return View();
         }
 

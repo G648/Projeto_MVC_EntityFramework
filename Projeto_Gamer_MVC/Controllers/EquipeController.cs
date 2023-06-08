@@ -21,10 +21,10 @@ namespace Projeto_Gamer_MVC.Controllers
         [Route("Listar")] //http://localhost/Equipe/Listar
         public IActionResult Index()
         {
-
             ViewBag.Login = HttpContext.Session.GetString("UserName");
             //criando uma mochila para armazenar as nossas equipes
             //viewbag é responsavel por ter acesso às equipes listadas;
+            // ViewBag.Equipe = conexaoBancoContext.Equipe.ToList();
             ViewBag.Equipe = conexaoBancoContext.Equipe.ToList();
 
             //retorna a view de equipe(TELA)

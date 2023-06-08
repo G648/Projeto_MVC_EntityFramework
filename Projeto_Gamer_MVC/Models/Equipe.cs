@@ -6,8 +6,8 @@ namespace Projeto_Gamer_MVC.Models
     {
         [Key]  //Data annotation - IdEquipe
         public int IdEquipe { get; set; }
-        public string? Nome { get; set; }
-        public string? Imagem { get; set; }
+        public string Nome { get; set; }
+        public string Imagem { get; set; }
 
         //referenciar a classe Equipe com a classe Jogador
         //Usado quando eu tenho a chave primária e uma chave secundária em outro lugar

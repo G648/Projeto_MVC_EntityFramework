@@ -4,30 +4,63 @@
     ViewData["Title"] = "Editar";
 }
 
+<link rel="stylesheet" href="~/css/equipesEditar.css">
+
 @* <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar</title>
 </head>
 <body> *@
-    <h1>Edição de equipes</h1>
 
-    <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+@* <form method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
 
-        <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
-        
-        <label for="">Nome</label>
-        <input type="text" name="Nome" value="@ViewBag.equipe.Nome">
+<input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
 
-        <label for="">Imagem</label>
-        <input type="file" name="Imagem" value="@ViewBag.equipe.Imagem">
+<label for="">Nome</label>
+<input type="text" name="Nome" value="@ViewBag.equipe.Nome">
 
-        <button type="submit">Atualizar</button>
+<label for="">Imagem</label>
+<input type="file" name="Imagem" value="@ViewBag.equipe.Imagem">
 
-    </form>
+<button type="submit">Atualizar</button>
+
+</form> *@
+<section class="banner">
+
+    <article class="container-grid equipes-flex container-grid-d">
+
+
+        <div class="border-gradient-equipe">
+
+            <form class="box-equipes" method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+                <input type="hidden" name="IdEquipe" value=@ViewBag.Equipe.IdEquipe>
+
+                <h1>Edição da Equipe : <span style="color: #f9aa01;" >@ViewBag.equipe.Nome</span></h1>
+                <hr>
+
+                <div class="input-gradient-equipes">
+                    <input value="@ViewBag.Equipe.Nome" type="text" placeholder="Digite o nome da sua equipe..." name="Nome">
+                </div>
+
+                <div class="image-equipe">
+                    <label for="input-file"></label>
+                    <input id="input-file" name="team-avatar" type="file" accept="image/png, image/jpeg">
+                    </input>
+                </div>
+
+                <button class="cadastro" type="submit">Atualizar</button>
+
+            </form>
+
+        </div>
+
+    </article>
+
+</section>
 
 @* </body>
 </html> *@

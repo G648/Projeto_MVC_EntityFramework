@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZKpuDXtXq2QnoIX6mGtT30rUI3O7mZapy6Xydy9wHfM=",
+  "Hash": "GoLJ0C9/xzOrSbdOV6gic5UI0P120844kshECDsMfeI=",
   "Source": "Projeto_Gamer_MVC",
   "BasePath": "_content/Projeto_Gamer_MVC",
   "Mode": "Default",
@@ -952,6 +952,23 @@
       "OriginalItemSpec": "wwwroot\\css\\equipes.css"
     },
     {
+      "Identity": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\equipesEditar.css",
+      "SourceId": "Projeto_Gamer_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_MVC",
+      "RelativePath": "css/equipesEditar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\equipesEditar.css"
+    },
+    {
       "Identity": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\jogadores.css",
       "SourceId": "Projeto_Gamer_MVC",
       "SourceType": "Discovered",
@@ -1681,6 +1698,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\SaopauloCorrea.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080 (1).jpg",
+      "SourceId": "Projeto_Gamer_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_MVC",
+      "RelativePath": "img/Equipes/wallpaperbetter.com_1920x1080 (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080 (1).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080.jpg",
+      "SourceId": "Projeto_Gamer_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_MVC",
+      "RelativePath": "img/Equipes/wallpaperbetter.com_1920x1080.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080.jpg"
     },
     {
       "Identity": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\WhatsApp Image 2023-06-06 at 18.46.51 (2).jpeg",

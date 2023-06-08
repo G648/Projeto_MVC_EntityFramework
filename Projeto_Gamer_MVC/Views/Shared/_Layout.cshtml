@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Projeto_Gamer_MVC</title>
+    @* <title>@ViewData["Title"] - Projeto_Gamer_MVC</title> *@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
@@ -56,14 +56,15 @@
         <div class="bottom-header container-grid-d">
 
             <div id="menu-lateral">
-
-                <img class="logotipo-desktop" src="~/images/logo-gamer.png" alt="">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="logotipo-desktop" src="~/images/logo-gamer.png" alt="">
+                </a>
 
                 <div class="upper-header-mobile">
 
                     <nav class="link-centro">
 
-                            @* posteriormente vamos alterar a aspcontroller home para login *@
+                        @* posteriormente vamos alterar a aspcontroller home para login *@
                         <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
 
                         <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
@@ -119,7 +120,7 @@
         </div>
 
     </header>
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

@@ -217,6 +217,10 @@
       "PackagePath": "staticwebassets\\css\\equipes.css"
     },
     {
+      "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\equipesEditar.css",
+      "PackagePath": "staticwebassets\\css\\equipesEditar.css"
+    },
+    {
       "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\css\\jogadores.css",
       "PackagePath": "staticwebassets\\css\\jogadores.css"
     },
@@ -395,6 +399,14 @@
     {
       "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\santista.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\santista.png"
+    },
+    {
+      "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080 (1).jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\wallpaperbetter.com_1920x1080 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\img\\Equipes\\wallpaperbetter.com_1920x1080.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\wallpaperbetter.com_1920x1080.jpg"
     },
     {
       "Id": "C:\\Users\\Docente\\Desktop\\MVC_Gamer\\Projeto_MVC_EntityFramework\\Projeto_Gamer_MVC\\wwwroot\\js\\login.js",

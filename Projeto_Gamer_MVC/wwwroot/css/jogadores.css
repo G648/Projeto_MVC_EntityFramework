@@ -733,7 +733,9 @@ header{
 /* MAIN */
 .banner-desktop{
     background-image: url(../images/banner_cadastro_de_jogador.png);
+    background-size: cover;
 }
+
 .border-gradient-jogadores{
     width: 800px;
     height:480px;
