@@ -64,14 +64,28 @@
 
                     <nav class="link-centro">
 
-                        @* posteriormente vamos alterar a aspcontroller home para login *@
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                        @if (ViewBag.Login != null)
+                        {
 
-                        <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
+                            @* posteriormente vamos alterar a aspcontroller home para login *@
 
-                        <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
 
-                        <a asp-area="" asp-controller="Login" asp-action="Login">Login</a>
+                            <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
+
+                            <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
+
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Notícias</a>
+
+                            <a asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+
+                        }
+                        else
+                        {
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Notícias</a>
+                        }
+
 
                     </nav>
 
@@ -108,8 +122,21 @@
 
                 <div class="icons-left">
 
-                    <a asp-area="" asp-controller="Login" asp-action="Login"><input type="image"
-                            src="~/assets/icons/icon-user.svg"></a>
+                    @if (ViewBag.Login == null)
+                    {
+
+                        <a asp-area="" asp-controller="Login" asp-action="Index"><input type="image"
+                                src="~/assets/icons/icon-user.svg"></a>
+
+                    }
+                    else
+                    {
+
+                        @* Fazer validação para aparecer apenas quando o usuário fizer login! *@
+                        <p style="color: white;"> @ViewBag.Login</p>
+
+                    }
+
                     <a href=""><img src="~/assets/icons/icon-bag.svg" alt=""></a>
                     <a href=""><img src="~/assets/icons/icon-lupa.svg" alt=""></a>
 

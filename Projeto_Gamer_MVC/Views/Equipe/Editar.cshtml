@@ -29,38 +29,47 @@
 <button type="submit">Atualizar</button>
 
 </form> *@
-<section class="banner">
 
-    <article class="container-grid equipes-flex container-grid-d">
+@if (ViewBag.Login == null)
+{
+    <a asp-area="" asp-controller="Login" asp-action="Index"> Login </a>
+}
+else
+{
+    <section class="banner">
+
+        <article class="container-grid equipes-flex container-grid-d">
 
 
-        <div class="border-gradient-equipe">
+            <div class="border-gradient-equipe">
 
-            <form class="box-equipes" method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
-                <input type="hidden" name="IdEquipe" value=@ViewBag.Equipe.IdEquipe>
+                <form class="box-equipes" method="post" action='@Url.Action("Atualizar")' enctype="multipart/form-data">
+                    <input type="hidden" name="IdEquipe" value=@ViewBag.Equipe.IdEquipe>
 
-                <h1>Edição da Equipe : <span style="color: #f9aa01;" >@ViewBag.equipe.Nome</span></h1>
-                <hr>
+                    <h1>Edição da Equipe : <span style="color: #f9aa01;">@ViewBag.equipe.Nome</span></h1>
+                    <hr>
 
-                <div class="input-gradient-equipes">
-                    <input value="@ViewBag.Equipe.Nome" type="text" placeholder="Digite o nome da sua equipe..." name="Nome">
-                </div>
+                    <div class="input-gradient-equipes">
+                        <input value="@ViewBag.Equipe.Nome" type="text" placeholder="Digite o nome da sua equipe..."
+                            name="Nome">
+                    </div>
 
-                <div class="image-equipe">
-                    <label for="input-file"></label>
-                    <input id="input-file" name="team-avatar" type="file" accept="image/png, image/jpeg">
-                    </input>
-                </div>
+                    <div class="image-equipe">
+                        <label for="input-file"></label>
+                        <input id="input-file" name="team-avatar" type="file" accept="image/png, image/jpeg">
+                        </input>
+                    </div>
 
-                <button class="cadastro" type="submit">Atualizar</button>
+                    <button class="cadastro" type="submit">Atualizar</button>
 
-            </form>
+                </form>
 
-        </div>
+            </div>
 
-    </article>
+        </article>
 
-</section>
+    </section>
+}
 
 @* </body>
 </html> *@

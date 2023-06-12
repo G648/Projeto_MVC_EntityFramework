@@ -47,11 +47,21 @@ namespace Projeto_Gamer_MVC.Controllers
             {
                 HttpContext.Session.SetString("UserName", jogadorBuscado.Nome!);
                 return LocalRedirect("~/");
+
+                message ="Olá, @ViewBag.Login ! Seja bem vindo!";
             }
 
             message = "Email ou Senha Incorretos";
 
             return LocalRedirect("~/Login/Login");
+        }
+
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserName");
+
+            return LocalRedirect("~/");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

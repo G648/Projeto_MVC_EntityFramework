@@ -6,94 +6,103 @@
 
 <link rel="stylesheet" href="~/css/jogadores.css">
 
-<body>
-    <main>
-        <section class="banner-desktop">
+@if (ViewBag.Login == null)
+{
+    <a asp-area="" asp-controller="Login" asp-action="Index"> Login </a>
+}
+else
+{
 
-            <article class="container-grid jogadores-flex container-grid-d">
+    <body>
+        <main>
+            <section class="banner-desktop">
 
-                <div class="border-gradient-jogadores">
+                <article class="container-grid jogadores-flex container-grid-d">
 
-                    <form class="box-jogadores" method="post" action='@Url.Action("Cadastrar")'
-                        enctype="multipart/form-data">
+                    <div class="border-gradient-jogadores">
 
-                        <h1>
-                            Cadastro de Jogadores
-                        </h1>
+                        <form class="box-jogadores" method="post" action='@Url.Action("Cadastrar")'
+                            enctype="multipart/form-data">
 
-                        <div class="input-gradient-jogadores">
-                            <input type="text" placeholder="Digite o nome do jogador...">
-                        </div>
+                            <h1>
+                                Cadastro de Jogadores
+                            </h1>
 
-                        <div class="input-gradient-jogadores">
-                            <input type="email" placeholder="Digite o email do jogaodor...">
-                        </div>
+                            <div class="input-gradient-jogadores">
+                                <input type="text" placeholder="Digite o nome do jogador..." name="Nome">
+                            </div>
 
-                        <div class="input-gradient-jogadores">
-                            <input type="password" placeholder="Digite a senha...">
-                        </div>
+                            <div class="input-gradient-jogadores">
+                                <input type="email" placeholder="Digite o email do jogaodor..." name="Email">
+                            </div>
 
-                        <select name="IdEquipe" id="IdEquipe" style="width: 80%;" id="select-team">
+                            <div class="input-gradient-jogadores">
+                                <input type="password" placeholder="Digite a senha..." name="Senha">
+                            </div>
 
-                            <option value="0">Selecione o Id da Equipe</option>
-                            @foreach (Equipe equipe in ViewBag.Equipe)
+                            <select name="IdEquipe" id="IdEquipe" style="width: 80%;" id="select-team">
+
+                                <option value="0">Selecione o Id da Equipe</option>
+                                @foreach (Equipe equipe in ViewBag.Equipe)
+                                {
+                                    <option value="@equipe.IdEquipe">@equipe.Nome</option>
+                                }
+
+                            </select>
+
+                            <button type="submit" class="cadastro">Cadastro</button>
+
+                        </form>
+
+                    </div>
+
+                </article>
+
+
+                <article class="table table-striped container-grid">
+                    <table>
+                        <thead>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Equipe</th>
+                            <th>Excluir</th>
+                            <th>Editar</th>
+                        </thead>
+
+                        <tbody class="scroll">
+                            @foreach (Jogador jogador in ViewBag.Jogador)
                             {
-                                <option value="@equipe.IdEquipe">@equipe.Nome</option>
+                                <tr class="table-line">
+                                    <td>@jogador.IdJogador</td>
+                                    <td>@jogador.Nome</td>
+                                    <td>@jogador.Email</td>
+
+                                    <td>
+                                        <img src="~/img/Equipes/@jogador.Equipe.Imagem" width="50px" alt="">
+                                    </td>
+
+                                    <td>
+                                        <a asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador"> 🗑️
+                                        </a>
+                                    </td>
+
+                                    <td>
+                                        <a asp-area="" asp-controller="Jogador" asp-action="Editar"
+                                            asp-route-id="@jogador.IdJogador"> ✏️ </a>
+                                    </td>
+                                </tr>
                             }
+                        </tbody>
 
-                        </select>
+                    </table>
 
-                        <button type="submit" class="cadastro">Cadastro</button>
+                </article>
 
-                    </form>
+            </section>
 
-                </div>
+        </main>
 
-            </article>
+    </body>
+}
 
-
-            <article class="table table-striped container-grid">
-                <table>
-                    <thead>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Equipe</th>
-                        <th>Excluir</th>
-                        <th>Editar</th>
-                    </thead>
-
-                    <tbody class="scroll">
-                        @foreach (Jogador jogador in ViewBag.Jogador)
-                        {
-                            <tr class="table-line">
-                                <td>@jogador.IdJogador</td>
-                                <td>@jogador.Nome</td>
-                                <td>@jogador.Email</td>
-
-                                <td>
-                                    <img src="~/img/Equipes/@jogador.Equipe.Imagem" width="50px" alt="">
-                                </td>
-
-                                <td>
-                                    <a asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador"> 🗑️
-                                    </a>
-                                </td>
-
-                                <td>
-                                    <a asp-area="" asp-controller="Jogador" asp-action="Editar"
-                                        asp-route-id="@jogador.IdJogador"> ✏️ </a>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-
-                </table>
-
-            </article>
-
-        </section>
-
-    </main>
-
-</body>

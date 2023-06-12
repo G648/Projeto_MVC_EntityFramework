@@ -4,41 +4,63 @@
     ViewData["Title"] = "Editar";
 }
 
-<h1>Edição de Jogadores</h1>
+<link rel="stylesheet" href="~/css/jogadoresEditar.css">
 
-<form method="post" action='@Url.Action("Atualizar")'>
+@if (ViewBag.Login == null)
+{
+    <a asp-area="" asp-controller="Login" asp-action="Index"> Login </a>
+}
+else
+{
+    <h1>Edição de Jogadores</h1>
+@* 
+    <section class="banner">
 
-    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+        <article class="container-grid equipes-flex container-grid-d">
 
-    <label for="">Nome</label>
-    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
 
-    <label for="">Email </label>
-    <input type="email" name="Email" value="@ViewBag.Jogador.Email">
+            <div class="border-gradient-equipe"> *@
 
-    <label for="">Senha</label>
-    <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+                <form method="post" action='@Url.Action("Atualizar")'>
 
-    <label for="">Equipe</label>
+                    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
-    <select name="IdEquipe" id="IdEquipe">
-        <option value="0"> Selecione uma opção:</option>
+                    <label for="">Nome</label>
+                    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
 
-        @foreach (Equipe equipe in ViewBag.Equipe)
-        {
-            @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
-            {
+                    <label for="">Email </label>
+                    <input type="email" name="Email" value="@ViewBag.Jogador.Email">
 
-                <option value="@equipe.IdEquipe" selected> @equipe.Nome</option>
-            }
-            else
-            {
-                <option value="@equipe.IdEquipe"> @equipe.Nome</option>
-            }
-        }
+                    <label for="">Senha</label>
+                    <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
 
-    </select>
+                    <label for="">Equipe</label>
 
-    <button type="submit">Atualizar</button>
+                    <select name="IdEquipe" id="IdEquipe">
+                        <option value="0"> Selecione uma opção:</option>
 
-</form>
+                        @foreach (Equipe equipe in ViewBag.Equipe)
+                        {
+                            @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
+                            {
+
+                                <option value="@equipe.IdEquipe" selected> @equipe.Nome</option>
+                            }
+                            else
+                            {
+                                <option value="@equipe.IdEquipe"> @equipe.Nome</option>
+                            }
+                        }
+
+                    </select>
+
+                    <button type="submit">Atualizar</button>
+
+                </form>
+@* 
+            </div>
+
+        </article>
+
+    </section> *@
+}
