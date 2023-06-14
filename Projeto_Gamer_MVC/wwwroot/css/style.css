@@ -53,7 +53,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: grey ;
+    background: grey;
     border-radius: 10px;
 }
 
@@ -483,11 +483,6 @@ header {
 
 .news-card img {
     width: 100%;
-    transition: width 0.5s, height 0.5s;
-}
-
-.news-card img:hover{
-    width: 200%;
 }
 
 .news h2 {
@@ -526,7 +521,7 @@ header {
 }
 
 .text-box-news p {
-    
+
     padding: 20px 25px 0 25px;
     font-family: "quicksand";
     font-size: 16px;

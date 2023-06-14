@@ -58,7 +58,7 @@ namespace Projeto_Gamer_MVC.Controllers
                 }
 
                 //gerar o caminho completo até o caminho do arquivo (imagem - nome com extensão)
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroo/img/", folder, file.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/", folder, file.FileName);
 
                 using (var stream = new FileStream(path, FileMode.Create))
                 {
