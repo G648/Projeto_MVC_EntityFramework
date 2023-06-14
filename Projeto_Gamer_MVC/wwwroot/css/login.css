@@ -355,6 +355,17 @@ header {
     background-color: #7c5f1f;
 }
 
+.botao-cadastro{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botao-cadastro:hover{
+    color: #f9aa01;
+}
+
 /* FOOTER */
 .footer{
     background-image: url(../images/backgorund-footer.png);

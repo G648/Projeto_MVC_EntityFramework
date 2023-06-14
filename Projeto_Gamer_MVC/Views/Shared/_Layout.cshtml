@@ -67,9 +67,6 @@
                         @if (ViewBag.Login != null)
                         {
 
-                            @* posteriormente vamos alterar a aspcontroller home para login *@
-
-
                             <a asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
 
                             <a asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
@@ -83,7 +80,11 @@
                         {
                             <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
 
+                            <a href="#progamer">ProGamer</a>
+
                             <a href="#noticias">Notícias</a>
+
+                            <a href="#contato">Contato</a>
                         }
 
 
@@ -187,7 +188,7 @@
                     <li> <a href="equipes.html">Equipes</a></li>
             </article>
 
-            <article class="box3-footer">
+            <article id="contato" class="box3-footer">
                 <h5>Contatos</h5>
                 <hr>
 

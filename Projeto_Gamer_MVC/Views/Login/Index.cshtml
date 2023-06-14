@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="~/css/login.css">
-    <script src="~/js/login.js"></script>
+    @* <script src="~/js/login.js"></script> *@
 
 </head>
 
@@ -53,7 +53,9 @@
 
                             <h2>@TempData.Peek("message")</h2>
 
-                            <button class="button-index-login" type="submit">Logar</button>
+                            <button type="submit">Logar</button>
+
+                            <p class="botao-cadastro">Cadastre-se</p>
 
                         </form>
 
