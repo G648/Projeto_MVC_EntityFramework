@@ -7,3 +7,4 @@
 	🚧  Projeto Gamer... 🚀 Em construção...  🚧
 </h4>
 
+<iframe title="GitHub" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMDdhZjliOTMtNDVkMC00NzZmLWJjYWQtMWVmNWQ4MDc5M2U1IiwidCI6IjQxNDhhNmRlLTBkZDEtNGQwNC1hNGM1LTc4ZTM3NGU0ZjZkNiIsImMiOjR9&pageName=ReportSectione980957bd37845a89202" frameborder="0" allowFullScreen="true"></iframe>
