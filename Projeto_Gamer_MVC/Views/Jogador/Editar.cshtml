@@ -12,16 +12,61 @@
 }
 else
 {
-    <h1>Edição de Jogadores</h1>
-@* 
-    <section class="banner">
+   <section class="banner-desktop">
 
-        <article class="container-grid equipes-flex container-grid-d">
+                <article class="container-grid jogadores-flex container-grid-d">
 
+                    <div class="border-gradient-jogadores">
 
-            <div class="border-gradient-equipe"> *@
+                        <form class="box-jogadores" method="post" action='@Url.Action("Atualizar")'>
 
-                <form method="post" action='@Url.Action("Atualizar")'>
+                            <h1>
+                                Cadastro de Jogadores
+                            </h1>
+
+                            <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+
+                            <div class="input-gradient-jogadores">
+                                <input type="text" name="Nome" value="@ViewBag.Jogador.Nome">
+                            </div>
+
+                            <div class="input-gradient-jogadores">
+                                <input type="email" name="Email" value="@ViewBag.Jogador.Email">
+                            </div>
+
+                            <div class="input-gradient-jogadores">
+                                <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+                            </div>
+
+                            <select name="IdEquipe" id="IdEquipe" style="width: 80%;" id="select-team">
+
+                                <option value="0">Selecione o nome da Equipe</option>
+                                @foreach (Equipe equipe in ViewBag.Equipe)
+                                {
+                                    @* <option value="@equipe.IdEquipe">@equipe.Nome</option> *@
+                                     @if (equipe.IdEquipe == @ViewBag.Jogador.IdEquipe)
+                            {
+
+                                <option value="@equipe.IdEquipe" selected> @equipe.Nome</option>
+                            }
+                            else
+                            {
+                                <option value="@equipe.IdEquipe"> @equipe.Nome</option>
+                            }
+                                }
+
+                            </select>
+
+                            <button type="submit" class="cadastro">Atualizar</button>
+
+                        </form>
+
+                    </div>
+
+                </article>
+   </section>
+
+                @* <form method="post" action='@Url.Action("Atualizar")'>
 
                     <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
@@ -56,7 +101,7 @@ else
 
                     <button type="submit">Atualizar</button>
 
-                </form>
+                </form> *@
 @* 
             </div>
 

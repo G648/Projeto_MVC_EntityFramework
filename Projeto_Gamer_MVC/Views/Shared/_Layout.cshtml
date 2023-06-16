@@ -167,9 +167,12 @@
 
                 <div class="social-box-footer">
 
-                    <a target="_blank" href="https://www.facebook.com/senaiinformatica/?locale=pt_BR"><img src="~/assets/icons/icon-face-footer.svg" alt=""></a>
-                    <a target="_blank" href="https://www.linkedin.com/school/senaiinfo/"><img src="~/assets/icons/icon-linkedin-footer.svg" alt=""></a>
-                    <a target="_blank" href="https://www.instagram.com/senai_info/"><img src="~/assets/icons/icon-insta-footer.svg" alt=""></a>
+                    <a target="_blank" href="https://www.facebook.com/senaiinformatica/?locale=pt_BR"><img
+                            src="~/assets/icons/icon-face-footer.svg" alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/school/senaiinfo/"><img
+                            src="~/assets/icons/icon-linkedin-footer.svg" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/senai_info/"><img
+                            src="~/assets/icons/icon-insta-footer.svg" alt=""></a>
 
                 </div>
 
@@ -193,7 +196,23 @@
 
                 <h2>Localização:</h2>
                 @* <p>Rua Niterói,180 - São Caetano do Sul - SP</p> *@
-                <div style="overflow:hidden;max-width:100%;width:350px;height:200px;"><div id="display-google-map" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Rua+Niterói,+180+-+Centro,+São+Caetano+do+Sul+-+SP,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a><style>#display-google-map img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                <div style="overflow:hidden;max-width:100%;width:350px;height:200px;">
+                    <div id="display-google-map" style="height:100%; width:100%;max-width:100%;"><iframe
+                            style="height:100%;width:100%;border:0;" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?q=Rua+Niterói,+180+-+Centro,+São+Caetano+do+Sul+-+SP,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div><a class="google-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+                        id="enable-map-data">premium bootstrap themes</a>
+                    <style>
+                        #display-google-map img.text-marker {
+                            max-width: none !important;
+                            background: none !important;
+                        }
+
+                        img {
+                            max-width: none
+                        }
+                    </style>
+                </div>
 
                 @* <h2>Junte-se a nós:</h2>
                 <p>contato@gamer.com.br</p>
@@ -234,6 +253,21 @@
         function mostrarMenuDireita() {
             document.getElementById("menu-lateral-direita").classList.toggle("mostrarMenuDireita")
         }
+
+        const password = document.getElementById("password");
+        const togglePassword = document.getElementById("toggle-password");
+        
+        togglePassword.addEventListener("click", toggleClicked);
+
+        function toggleClicked() {
+            password.classList.toggle("visible");
+            if (this.checked) {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+        
     </script>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
