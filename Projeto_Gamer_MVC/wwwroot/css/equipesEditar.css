@@ -241,8 +241,7 @@ header {
 /* ************ MAIN ************** */
 .banner {
     background-image: url(../images/Banner_cadastro_de_Equipe.png);
-
-    height: 1231px;
+    height: 815px;
 }
 
 .equipes-flex {
@@ -331,6 +330,7 @@ header {
 }
 
 .image-equipe input::file-selector-button {
+    cursor: pointer;
     background-color: white;
     width: 124px;
     height: 40px;
@@ -770,7 +770,7 @@ h2 {
     }
 
     .image-equipe input::file-selector-button {
-        width: 334px;
+        width: 280px;
     }
 
     tbody>tr:last-of-type {
